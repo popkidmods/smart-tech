@@ -169,7 +169,7 @@ setTimeout(() => {
             
             var dev = [abu1, abu2,abu3,abu4].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🌍BMW-MD ONLINE🌍");
+            console.log("\t🕵CYBERION IS ONLINE🕵");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -297,7 +297,7 @@ function mybotpic() {
 
         // Constructing the forward message and notification
         let participant = deletedMsg.key.participant || deletedMsg.key.remoteJid;
-        let caption = `*🚨 Deleted Message Detected*\n\nDeleted by @${participant.split('@')[0]}`;
+        let caption = `*🚮 Deleted Message Detected*\n\nDeleted by @${participant.split('@')[0]}`;
         
         await zk.sendMessage(idBot, {
             image: { url: './files/deleted-message.jpg' },
@@ -656,18 +656,18 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Bmw is connecting...");
+                console.log("ℹ️ Cyberion is connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Bmw Connected to WhatsApp! ☺️");
+                console.log("✅ Cyberion Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Bmw Md is Online 🕸\n\n");
+                console.log("Cyberion Md is Online 🕸\n\n");
                 //chargement des commandes 
-                console.log("Loading Bmw Commands ...\n");
+                console.log("Loading Cyberion Commands ...\n");
                 fs.readdirSync(__dirname + "/scs").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
