@@ -256,7 +256,7 @@ function mybotpic() {
 
 
             /************************ anti-delete-message */
-/*
+
             if(ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLocaleLowerCase() === 'yes' ) {
 
                 if(ms.key.fromMe || ms.message.protocolMessage.key.fromMe) { console.log('Message supprimer me concernant') ; return }
@@ -304,99 +304,19 @@ function mybotpic() {
                                }
                             }
 
-        */
+        
             // Ensure to install moment-timezone
 
 // Function to set bio with current Kenya time
-async function setBio() {
-    const now = moment().tz("Africa/Nairobi").format("LLLL"); // Format: Day, Month Date, Year
-    const bio = `Current time in Nairobi: ${now} \n🚗 BMW MD`;
-    await zk.setStatus(bio);
-}
-
-// Anti-delete feature
-if (ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLocaleLowerCase() === 'yes') {
-    if (ms.key.fromMe || ms.message.protocolMessage.key.fromMe) {
-        console.log('Message deleted by me');
-        return;
-    }
-
-    console.log(`Message deleted`);
-    let key = ms.message.protocolMessage.key;
-
-    try {
-        let st = './store.json';
-        const data = fs.readFileSync(st, 'utf8');
-        const jsonData = JSON.parse(data);
-        let message = jsonData.messages[key.remoteJid];
-
-        let msg;
-        for (let i = 0; i < message.length; i++) {
-            if (message[i].key.id === key.id) {
-                msg = message[i];
-                break;
+if (conf.AUTO_READ === 'yes') {
+    zk.ev.on('messages.upsert', async (m) => {
+        const { messages } = m;
+        for (const message of messages) {
+            if (!message.key.fromMe) {
+                await zk.readMessages([message.key]);
             }
         }
-
-        if (msg === null || !msg || msg === 'undefined') {
-            console.log('Message not found');
-            return;
-        }
-
-        await zk.sendMessage(idBot, {
-            image: { url: './files/deleted-message.jpg' },
-            caption: `*Deleted message detected*\n\n🚮 Deleted by @${msg.key.participant.split('@')[0]}​`,
-            mentions: [msg.key.participant]
-        });
-        await zk.sendMessage(idBot, { forward: msg }, { quoted: msg });
-
-    } catch (e) {
-        console.log(e);
-    }
-}
-
-// Auto-status management for incoming status messages
-if (ms.key && ms.key.remoteJid === "status@broadcast" && conf.AUTO_READ_STATUS === "yes") {
-    await zk.readMessages([ms.key]);
-}
-
-if (ms.key && ms.key.remoteJid === 'status@broadcast' && conf.AUTO_DOWNLOAD_STATUS === "yes") {
-    if (ms.message.extendedTextMessage) {
-        var stTxt = ms.message.extendedTextMessage.text;
-        await zk.sendMessage(idBot, { text: stTxt }, { quoted: ms });
-    } else if (ms.message.imageMessage) {
-        var stMsg = ms.message.imageMessage.caption;
-        var stImg = await zk.downloadAndSaveMediaMessage(ms.message.imageMessage);
-        await zk.sendMessage(idBot, { image: { url: stImg }, caption: stMsg }, { quoted: ms });
-    } else if (ms.message.videoMessage) {
-        var stMsg = ms.message.videoMessage.caption;
-        var stVideo = await zk.downloadAndSaveMediaMessage(ms.message.videoMessage);
-        await zk.sendMessage(idBot, {
-            video: { url: stVideo }, caption: stMsg
-        }, { quoted: ms });
-    }
-}
-
-// Auto-react to every incoming text message with different emojis
-if (ms.message && ms.message.text && conf.AUTO_REACT === "yes") {
-    const emojis = ['👍', '😂', '❤️', '😮', '🎉', '🔥']; // Add any emojis you like
-    const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-    await zk.reactToMessage(ms.key, { reaction: randomEmoji });
-}
-
-// Auto-read messages functionality
-if (conf.AUTO_READ_MESSAGES === "yes") {
-    await zk.readMessages([ms.key]);
-}
-
-// Set bio automatically if configured
-if (conf.SET_BIO === "yes") {
-    await setBio();
-}
-
-// Avoid processing messages from specific origins
-if (!dev && origineMessage == "120363158701337904@g.us") {
-    return;
+    });
 }
             /** ****** gestion auto-status  */
             if (ms.key && ms.key.remoteJid === "status@broadcast" && conf.AUTO_READ_STATUS === "yes") {
