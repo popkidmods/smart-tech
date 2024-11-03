@@ -37,16 +37,16 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
   *Hey🖐️* *${nomAuteurMessage}*
   
-  *BMW MD IS RUNNING WITH [${cm.length}0] COMMANDS*
+  *CURRENTLY, CYBERION HAS [${cm.length}0] COMMANDS*
 
   *More commands will be out soon*
  
-  🚘🚘🚘
+  🕵🎯
  `;
     
 let menuMsg = `
-> ⏲️ ᴛɪᴍᴇ: ${temps}
-> 📅 ᴅᴀᴛᴇ: ${date} 
+> 👾 ᴛɪᴍᴇ: ${temps}
+> ♨️ ᴅᴀᴛᴇ: ${date} 
 
 
 > Made by : ©Ibrahim Adams 
