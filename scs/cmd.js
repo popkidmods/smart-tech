@@ -37,7 +37,7 @@ const date = moment().format('DD/MM/YYYY');
   let infoMsg =  `
   *Hey🖐️* *${nomAuteurMessage}*
   
-  *CURRENTLY, CYBERION HAS [${cm.length}0] COMMANDS*
+  *CURRENTLY, CYBERION HAS [0${cm.length}] COMMANDS*
 
   *More commands will be out soon*
  
@@ -49,7 +49,7 @@ let menuMsg = `
 > ♨️ ᴅᴀᴛᴇ: ${date} 
 
 
-> Made by : ©Ibrahim Adams 
+> Made by : ©CarlTech 🕵 
 `;
 
    var lien = mybotpic();
