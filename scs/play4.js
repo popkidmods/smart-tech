@@ -44,7 +44,7 @@ adams({
         }, {
           'quoted': _0x289345
         });
-        _0x19cdef("*SONG INFO*\n\n*Song Name* " + _0x7c7652.result.title + "\n*Song Owner* " + _0x314dd5[0].author.name +"\n\n*_®ADAMS 2024_*");
+        _0x19cdef("*SONG INFO*\n\n*Song Name* " + _0x7c7652.result.title + "\n*Song Owner* " + _0x314dd5[0].author.name +"\n\n*_®CARLTECH 2024_*");
           
       
       } else {
