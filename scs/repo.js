@@ -20,7 +20,7 @@ adams({
       'lastUpdate': _0x36b130.updated_at,
       'owner': _0x36b130.owner.login
     };
-    const _0x20cf11 = "𝑪𝒀𝑩𝑬𝑹𝑰𝑶𝑵 𝑺𝑷𝑨𝑹𝑲 𝑿 𝑰𝑵𝑭𝑶.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 𝑪𝑨𝑹𝑳𝑻𝑬𝑪𝑯.\n\n𝑺𝑻𝑨𝑹⭐ 𝑻𝑯𝑬𝑵 𝑭𝑶𝑹𝐊🍴\n\n📂 Repository Name: *CUBERION*\n📝 Last Update: " + _0x50985d.lastUpdate + "\n👤 Owner: *CARLTECH*\n⭐ Stars: " + _0x50985d.stars + "\n🍽 Forks: " + _0x50985d.forks + "\n🍭 Repo: " + _0x36b130.html_url + "\n🍧 For More Info : https://github.com/carl24tech/CARLTECH-INFO⁠\n";
+    const _0x20cf11 = "𝑪𝒀𝑩𝑬𝑹𝑰𝑶𝑵 𝑺𝑷𝑨𝑹𝑲 𝑿 𝑰𝑵𝑭𝑶.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 𝑪𝑨𝑹𝑳𝑻𝑬𝑪𝑯.\n\n𝑺𝑻𝑨𝑹⭐ 𝑻𝑯𝑬𝑵 𝑭𝑶𝑹𝐊🍴\n\n📂 Repository Name: *CYBERION*\n📝 Last Update: " + _0x50985d.lastUpdate + "\n🕵 Owner: *CARLTECH*\n⭐ Stars: " + _0x50985d.stars + "\n🍽 Forks: " + _0x50985d.forks + "\n🍭 Repo: " + _0x36b130.html_url + "\n🍧 For More Info : https://github.com/carl24tech/CARLTECH-INFO⁠\n";
     await _0x3cdb38.sendMessage(_0x256950, {
       'image': {
         'url': "https://i.imgur.com/0nWnGBx.jpeg"
