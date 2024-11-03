@@ -6,7 +6,7 @@ const {adams}=require("../Ibrahim/adams")
 
 
 
-adams({nomCom:"reboot",categorie:"Mods",reaction:"👨🏿‍💼"},async(dest,z,com)=>{
+adams({nomCom:"reboot",categorie:"Mods",reaction:"🛰"},async(dest,z,com)=>{
 
 
   
@@ -19,7 +19,7 @@ const{repondre,ms,dev,superUser}=com;
 
   const {exec}=require("child_process")
 
-    repondre("*restarting ...*");
+    repondre("*Cyberion Spark X restarting ...*");
 
   exec("pm2 restart all");
   
