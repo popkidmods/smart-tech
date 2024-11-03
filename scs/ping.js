@@ -22,7 +22,7 @@ let flashspeed = (speed() - timestamp).toFixed(4)
 adams({ nomCom: 'ping',
     desc: 'To check ping',
     Categorie: 'General',
-    reaction: '🚘', 
+    reaction: '🚀', 
     fromMe: 'true', 
 
 
@@ -44,7 +44,7 @@ await repondre(`*Pong▱▱▱▰▰▰▰▰ ${flashspeed} MS* `);
 adams({ nomCom: 'uptime',
     desc: 'To check runtime',    
     Categorie: 'General',
-    reaction: '🚘', 
+    reaction: '🛸', 
     fromMe: 'true', 
 
 
@@ -52,7 +52,7 @@ adams({ nomCom: 'uptime',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*Bmw speed is: ${runtime(process.uptime())}_*`) 
+                 await repondre(`*speed: ${runtime(process.uptime())}_*`) 
 
    
 
@@ -80,7 +80,7 @@ adams({ nomCom: 'ss',
 let linkkk = `https://api.maher-zubair.tech/misc/sstab?url=${linkk}&dimension=720x720`;
 
 let res = await getBuffer(linkkk);
-   let caption = '*Powered by BARAKA-MD-V1*' 
+   let caption = '*Powered by Spark-X*' 
 
 await zk.sendMessage(dest, { image: res }, { caption: caption }, { quoted: ms });
 
