@@ -47,7 +47,7 @@ const sleep =  (ms) =>{
         type = 'not animated sticker'
       }
   
-      let msg = `   Bwm-md-stickers-dl
+      let msg = `   Cyberion-stickers-dl
       
   *Name :* ${stickers.data.result.name}
   *Type :* ${type} 
@@ -70,7 +70,7 @@ const sleep =  (ms) =>{
   
           const sticker = new Sticker(buffer.data, {
             pack: nomAuteurMessage,
-            author: "Bwm-md",
+            author: "Cyberion",
             type: StickerTypes.FULL,
             categories: ['🤩', '🎉'],
             id: '12345',
@@ -487,7 +487,7 @@ adams({ nomCom: "save", categorie: "Mods" }, async (dest, zk, commandeOptions) =
           let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
   
           let stickerMess = new Sticker(media, {
-            pack: 'BMW-MD-TAG',
+            pack: 'SPARK-X TAG',
             type: StickerTypes.CROPPED,
             categories: ["🤩", "🎉"],
             id: "12345",
@@ -560,7 +560,7 @@ Link: ${url}
 
 To activate or modify the mention, follow this syntax: mention link type message
 The different types are audio, video, image, and sticker.
-Example: mention https://telegra.ph/file/52e3bb0ba3868d64df3f0.jpg image Hi, my name is Beltah
+Example: mention https://telegra.ph/file/52e3bb0ba3868d64df3f0.jpg image Hi, my name is Carltech
 
 To stop the mention, use mention stop`;
 
