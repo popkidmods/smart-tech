@@ -1,4 +1,6 @@
 
+
+
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -49,7 +51,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./lib
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./lib/onlyAdmin");
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/Ibrahim/app");
-var session = conf.session.replace(/CYBERION;;;/g,"");
+var session = conf.session.replace(/Adams-2024;;;/g,"");
 const prefixe = conf.PREFIXE;
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
@@ -169,7 +171,7 @@ setTimeout(() => {
             
             var dev = [abu1, abu2,abu3,abu4].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t🕵CYBERION IS ONLINE🕵");
+            console.log("\t🌍BMW-MD ONLINE🌍");
             console.log("=========== written message===========");
             if (verifGroupe) {
                 console.log("message provenant du groupe : " + nomGroupe);
@@ -297,7 +299,7 @@ function mybotpic() {
 
         // Constructing the forward message and notification
         let participant = deletedMsg.key.participant || deletedMsg.key.remoteJid;
-        let caption = `*🚮 Deleted Message Detected*\n\nDeleted by @${participant.split('@')[0]}`;
+        let caption = `*🚨 Deleted Message Detected*\n\nDeleted by @${participant.split('@')[0]}`;
         
         await zk.sendMessage(idBot, {
             image: { url: './files/deleted-message.jpg' },
@@ -378,7 +380,7 @@ if (conf.AUTO_READ === 'yes') {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Cyberion',
+                pack: 'Bmw-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -419,7 +421,7 @@ if (conf.AUTO_READ === 'yes') {
     let warn = await getWarnCountByJID(auteurMessage) ; 
     let warnlimit = conf.WARN_COUNT
  if ( warn >= warnlimit) { 
-  var kikmsg = `bot detected ;you will be removed because of reaching warn-limit`;
+  var kikmsg = `bot detected ;you will be remove because of reaching warn-limit`;
     
      await zk.sendMessage(origineMessage, { text: kikmsg , mentions: [auteurMessage] }, { quoted: ms }) ;
 
@@ -522,13 +524,13 @@ zk.ev.on('group-participants.update', async (group) => {
         const metadata = await zk.groupMetadata(group.id);
 
         if (group.action == 'add' && (await recupevents(group.id, "welcome") == 'on')) {
-            let msg = `*CYBERION WELCOME MESSAGE*`;
+            let msg = `*BMW MD WELCOME MESSAGE*`;
             let membres = group.participants;
             for (let membre of membres) {
                 msg += ` \n❒ *Hey* 🖐️ @${membre.split("@")[0]} WELCOME TO OUR GROUP. \n\n`;
             }
 
-            msg += `❒ *READ THE GROUP DESCRIPTION TO AVOID  REMOVAL* `;
+            msg += `❒ *READ THE GROUP DESCRIPTION TO AVOID GETTING REMOVED* `;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
@@ -656,16 +658,16 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Cyberion is connecting...");
+                console.log("ℹ️  connecting...");
             }
             else if (connection === 'open') {
-                console.log("✅ Cyberion Connected to WhatsApp! ☺️");
+                console.log("✅  Connected to WhatsApp! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log("Cyberion  is Online 🕸\n\n");
+                console.log("Cyberion is Online 🕸\n\n");
                 //chargement des commandes 
                 console.log("Loading Cyberion Commands ...\n");
                 fs.readdirSync(__dirname + "/scs").forEach((fichier) => {
@@ -711,8 +713,7 @@ zk.ev.on('group-participants.update', async (group) => {
     ┃  📃Total Commands : ${evt.cm.length}
     ✰⁠⁠⁠⁠▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰✰
  └─────═━┈┈━═─⊷─⊷═━┈┈━═─────┘
-         *𝗖𝗬𝗕𝗘𝗥𝗜𝗢𝗡-𝗦𝗣𝗔𝗥𝗞-𝗫* `;
-                    
+         *𝗖𝗬𝗕𝗘𝗥𝗜𝗢𝗡-𝗦𝗣𝗔𝗥𝗞-𝗫* `;                
                 await zk.sendMessage(zk.user.id, { text: cmsg });
                 }
             }
