@@ -20,10 +20,10 @@ adams({
       'lastUpdate': _0x36b130.updated_at,
       'owner': _0x36b130.owner.login
     };
-    const _0x20cf11 = "𝑪𝒀𝑩𝑬𝑹𝑰𝑶𝑵 𝑺𝑷𝑨𝑹𝑲 𝑿 𝑰𝑵𝑭𝑶.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 𝑪𝑨𝑹𝑳𝑻𝑬𝑪𝑯.\n\n𝑺𝑻𝑨𝑹⭐ 𝑻𝑯𝑬𝑵 𝑭𝑶𝑹𝐊🍴\n\n📂 Repository Name: *CUBERION*\n📝 Last Update: " + _0x50985d.lastUpdate + "\n👤 Owner: *CARLTECH*\n⭐ Stars: " + _0x50985d.stars + "\n🍴 Forks: " + _0x50985d.forks + "\n🌐 Repo: " + _0x36b130.html_url + "\n⭕ For More Info : https://github.com/carl24tech/CARLTECH-INFO⁠\n";
+    const _0x20cf11 = "𝑪𝒀𝑩𝑬𝑹𝑰𝑶𝑵 𝑺𝑷𝑨𝑹𝑲 𝑿 𝑰𝑵𝑭𝑶.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 𝑪𝑨𝑹𝑳𝑻𝑬𝑪𝑯.\n\n𝑺𝑻𝑨𝑹⭐ 𝑻𝑯𝑬𝑵 𝑭𝑶𝑹𝐊🍴\n\n📂 Repository Name: *CUBERION*\n📝 Last Update: " + _0x50985d.lastUpdate + "\n👤 Owner: *CARLTECH*\n⭐ Stars: " + _0x50985d.stars + "\n🍽 Forks: " + _0x50985d.forks + "\n🍭 Repo: " + _0x36b130.html_url + "\n🍧 For More Info : https://github.com/carl24tech/CARLTECH-INFO⁠\n";
     await _0x3cdb38.sendMessage(_0x256950, {
       'image': {
-        'url': "https://telegra.ph/file/17c83719a1b40e02971e4.jpg"
+        'url': "https://i.imgur.com/0nWnGBx.jpeg"
       },
       'caption': _0x20cf11
     });
@@ -45,10 +45,10 @@ adams({
       'lastUpdate': _0x54f98d.updated_at,
       'owner': _0x54f98d.owner.login
     };
-    const _0x305ae3 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎𝐌𝐄𝐓𝐈𝐎𝐍.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n📂 Repository Name: *CYBERION*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n👤 Owner: *CARLTECH*\n⭐ Stars: " + _0x33ab65.stars + "\n🍴 Forks: " + _0x33ab65.forks + "\n🔄 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
+    const _0x305ae3 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎𝐌𝐄𝐓𝐈𝐎𝐍.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n🔄 Repository Name: *CYBERION*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n🕵 Owner: *CARLTECH*\n⭐ Stars: " + _0x33ab65.stars + "\n🍽 Forks: " + _0x33ab65.forks + "\n🔄 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
     await _0xc5957d.sendMessage(_0x2ad97e, {
       'image': {
-        'url': "https://telegra.ph/file/17c83719a1b40e02971e4.jpg"
+        'url': "https://i.imgur.com/0nWnGBx.jpeg"
       },
       'caption': _0x305ae3
     });
