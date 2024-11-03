@@ -129,10 +129,10 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
                     rendersmallThumbnail: false
                 }
             }
-        });
+        });*/
 
     } catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
         repondre("🥵🥵 Menu erreur " + e);
     }
-});*/
+});
