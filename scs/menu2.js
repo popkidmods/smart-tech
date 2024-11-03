@@ -28,7 +28,7 @@ const runtime = function (seconds) {
 // Function to fetch GitHub repo data
 const fetchGitHubStats = async () => {
     try {
-        const repo = 'Devibraah/BWM-XMD'; // Replace with your repo
+        const repo = 'carl24tech/Cyberion-Spark-X'; // Replace with your repo
         const response = await axios.get(`https://api.github.com/repos/${repo}`);
         const forks = response.data.forks_count;
         const stars = response.data.stargazers_count;
@@ -105,7 +105,7 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
                 mentionedJid: [nomAuteurMessage],
                 externalAdReply: {
                     body: "©CarlTech",
-                    thumbnailUrl: "https://files.catbox.moe/ytix9f.jpeg",
+                    thumbnailUrl: "https://i.imgur.com/TQmsvQm.jpeg",
                     sourceUrl: 'https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h',
                     mediaType: 1,
                     rendersmallThumbnail: true
