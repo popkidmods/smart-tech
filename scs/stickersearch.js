@@ -5,7 +5,7 @@ const {adams} = require("../Ibrahim/adams");
 adams({
   nomCom: "stickersearch",
   categorie: 'Search',
-  reaction: "🍁"
+  reaction: "💮"
 },
 async (dest, zk, commandeOptions) => {
   const { repondre, ms, arg, nomAuteurMessage } = commandeOptions;
@@ -33,7 +33,7 @@ async (dest, zk, commandeOptions) => {
 
     const stickerMess = new Sticker(gifUrl, {
       pack: packname,
-      author: 'BMW-MD',
+      author: 'CYBERION-SPARK-X',
       type: StickerTypes.FULL,
       categories: ["🤩", "🎉"],
       id: "12345",
