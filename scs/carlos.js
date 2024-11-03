@@ -9,7 +9,7 @@ const s = require(__dirname + "/../config");
 const more = String.fromCharCode(8206)
 const readmore = more.repeat(4001)
 
-adams({ nomCom: "ibrahim", categorie: "General" }, async (dest, zk, commandeOptions) => {
+adams({ nomCom: "carlos", categorie: "General" }, async (dest, zk, commandeOptions) => {
     let { ms, repondre ,prefixe,nomAuteurMessage,mybotpic} = commandeOptions;
     let { cm } = require(__dirname + "/../Ibrahim//adams");
     var coms = {};
@@ -35,24 +35,22 @@ const temps = moment().format('HH:mm:ss');
 const date = moment().format('DD/MM/YYYY');
 
   let infoMsg =  `
-*Yes my G what's up* 😎
+*PLEASE SUPPORT* 😎
 
 
-*Any way just follow the following channels*
+*just follow the following channels*
 
 
 *Whatsapp channel*
-> https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y
+> https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h
 
-*Youtube*
-> https://www.youtube.com/@ibrahimaitech
-
-*For more info*
-> https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO⁠
+*Telegram 
+> https://t.me/carltechai 
+⁠
   `;
     
 let menuMsg = `
-> ©Ibrahim Adams 
+> ©🕵 
 `;
 
    var lien = mybotpic();
