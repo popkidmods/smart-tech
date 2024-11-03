@@ -116,7 +116,7 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
         // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
-                url: "https://files.catbox.moe/oordg5.mp3" // Replace with your audio URL
+                url: "" // Replace with your audio URL
             }, 
             mimetype: 'audio/mp4', 
             ptt: false, // Set to true if you want it as a voice note
