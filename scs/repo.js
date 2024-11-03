@@ -8,7 +8,7 @@ const {
 } = require("../Ibrahim/adams");
 adams({
   'nomCom': "repo",
-  'reaction': '📂',
+  'reaction': '🏹',
   'nomFichier': __filename
 }, async (_0x256950, _0x3cdb38, _0x2c604e) => {
   const _0x2f4eff = await fetch('https://api.github.com/repos/carl24tech/Cyberion-Spark-X');
@@ -33,7 +33,7 @@ adams({
 });
 adams({
   'nomCom': "git",
-  'reaction': '📂',
+  'reaction': '🗂',
   'nomFichier': __filename
 }, async (_0x2ad97e, _0xc5957d, _0x2a01f1) => {
   const _0x23b84a = await fetch("https://api.github.com/repos/devibraah/BWM-XMD");
@@ -45,7 +45,7 @@ adams({
       'lastUpdate': _0x54f98d.updated_at,
       'owner': _0x54f98d.owner.login
     };
-    const _0x305ae3 = "𝐁𝐌𝐖 𝐌𝐃 𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎𝐌𝐄𝐓𝐈𝐎𝐍.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 𝐈𝐁𝐑𝐀𝐇𝐈𝐌 𝐀𝐃𝐀𝐌𝐒.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n📂 Repository Name: *BMW-MD*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n👤 Owner: *Ibrahim Adams*\n⭐ Stars: " + _0x33ab65.stars + "\n🍴 Forks: " + _0x33ab65.forks + "\n🌐 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
+    const _0x305ae3 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎𝐌𝐄𝐓𝐈𝐎𝐍.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n📂 Repository Name: *CYBERION*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n👤 Owner: *CARLTECH*\n⭐ Stars: " + _0x33ab65.stars + "\n🍴 Forks: " + _0x33ab65.forks + "\n🔄 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
     await _0xc5957d.sendMessage(_0x2ad97e, {
       'image': {
         'url': "https://telegra.ph/file/17c83719a1b40e02971e4.jpg"
@@ -56,9 +56,9 @@ adams({
     console.log("Could not fetch data");
   }
 });
-adams({
+/*adams({
   'nomCom': 'sc',
-  'reaction': '📂',
+  'reaction': '🗄',
   'nomFichier': __filename
 }, async (_0x1f8a03, _0x41191c, _0x8dd7fa) => {
   const _0x21464f = await fetch("https://api.github.com/repos/devibraah/BWM-XMD");
@@ -70,7 +70,7 @@ adams({
       'lastUpdate': _0x3fb866.updated_at,
       'owner': _0x3fb866.owner.login
     };
-    const _0x58e2e9 = "𝐁𝐌𝐖 𝐌𝐃 𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎𝐌𝐄𝐓𝐈𝐎𝐍.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 𝐈𝐁𝐑𝐀𝐇𝐈𝐌 𝐀𝐃𝐀𝐌𝐒.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n📂 Repository Name: *BMW-MD*\n📝 Last Update: " + _0x4bac21.lastUpdate + "\n👤 Owner: *Ibrahim Adams*\n⭐ Stars: " + _0x4bac21.stars + "\n🍴 Forks: " + _0x4bac21.forks + "\n🌐 Repo: " + _0x3fb866.html_url + "\n⭕ For More Info : https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO⁠\n";
+    const _0x58e2e9 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵. \n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n🔄 Repository Name: *CYBERION*\n📝 Last Update: " + _0x4bac21.lastUpdate + 🕵 Owner: *Ibrahim Adams*\n⭐ Stars: " + _0x4bac21.stars + "\n🍴 Forks: " + _0x4bac21.forks + "\n🌐 Repo: " + _0x3fb866.html_url + "\n⭕ For More Info : https://github.com/IBRAHIM-TECH-AI/IBRAHIM-ADAMS-INFO⁠\n";
     await _0x41191c.sendMessage(_0x1f8a03, {
       'image': {
         'url': "https://telegra.ph/file/17c83719a1b40e02971e4.jpg"
@@ -105,7 +105,7 @@ adams({
   } else {
     console.log("Could not fetch data");
   }
-});
+});*/
 
 
 
