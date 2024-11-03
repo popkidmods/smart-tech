@@ -105,7 +105,7 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
                 mentionedJid: [nomAuteurMessage],
                 externalAdReply: {
                     body: "©CarlTech",
-                    thumbnailUrl: "https://i.imgur.com/TQmsvQm.jpeg",
+                    thumbnailUrl: "https://i.imgur.com/1lajgf4.mp4",
                     sourceUrl: 'https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h',
                     mediaType: 1,
                     rendersmallThumbnail: true
