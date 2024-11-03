@@ -1,4 +1,3 @@
-
 const util = require('util');
 const fs = require('fs-extra');
 const axios = require('axios');
@@ -10,6 +9,8 @@ const s = require(__dirname + "/../config");
 
 const more = String.fromCharCode(8206);
 const readmore = more.repeat(4001);
+const BaseUrl = process.env.GITHUB_GIT;
+const adamsapikey = process.env.BOT_OWNER;
 
 const runtime = function (seconds) { 
     seconds = Number(seconds); 
@@ -65,21 +66,22 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     const formattedTotalUsers = totalUsers.toLocaleString();
 
     let infoMsg = `
-╭─────═━┈┈━═──━┈⊷
-┇ ʙᴏᴛ ɴᴀᴍᴇ: *ʙᴍᴡ ᴍᴅ*
-┇ mode: *${mode}*
-┇ starter: *[ ${prefixe} ]*
-┇ platform: *${os.platform()}*
-┇ version: *SPARK-X*
-┇ ᴅᴀᴛᴇ: *${date}*
-┇ ᴛɪᴍᴇ: *${temps}*
-┇ Storage ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
-╰─────═━┈┈━═──━┈⊷\n\n
-🌍 𝐁𝐄𝐒𝐓 𝐖𝐇𝐀𝐓𝐒𝐀𝐏𝐏 𝐁𝐎𝐓 🌍\n\n`;
+*🤗Hello* *${nomAuteurMessage}*
+╭────《𝐂𝐘𝐁𝐄𝐑𝐈𝐎𝐍》──────❒
+╏✰▏ *User* : ${s.OWNER_NAME}
+╏✰▏ *Developer* : *🕵CARLTECH*
+╰───────────────────❒
+╏✰▏ *Mode* : ${mode}
+╏✰▏ *Commands* : ${cm.length} 
+╰───────────────────❒
+╏✰▏ *Time* : ${temps} 
+╏✰▏ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
+╏✰▏ *Series* : *SPARK-X*
+╰───────────────────❒ \n\n`;
 
     let menuMsg = `${readmore}  
 ╭─────═━┈┈━═──━┈⊷
-┇ SPARK-X commands 
+┇ Welcome 🤗 
 ╰─────═━┈┈━═──━┈⊷\n\n`;
 
     const sortedCategories = Object.keys(coms).sort();
@@ -92,9 +94,9 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
     });
 
     menuMsg += `
-☆☆☆☆☆☆☆☆☆☆☆☆☆☆
-> powered by Spark-X 
-☆☆☆☆☆☆☆☆☆☆☆☆☆☆`;
+☆☆☆☆☆☆☆☆☆☆☆☆☆
+©CarlTech
+☆☆☆☆☆☆☆☆☆☆☆☆☆`;
 
     try {
         await zk.sendMessage(dest, { 
@@ -121,7 +123,7 @@ adams({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
             caption: "CARLTECH SONG",
             contextInfo: {
                 externalAdReply: {
-                    body: "BMW SONG BY CARLTECH",
+                    body: "CYBERION-SPARK-X",
                     thumbnailUrl: "https://files.catbox.moe/va22vq.jpeg",
                     sourceUrl: 'https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h',
                     rendersmallThumbnail: false
