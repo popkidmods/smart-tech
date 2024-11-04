@@ -134,7 +134,7 @@ adams( {
     
     
          let msg = `
-┏━━━┛ Bmw-Rang ┗━━━┓
+┏━━━┛ RANKS ┗━━━┓
          
     *Name :* @${auteurMsgRepondu.split("@")[0]}
     
@@ -210,7 +210,7 @@ adams( {
     
     
          let msg = `
-┏━━━┛ bmw rank┗━━━┓
+┏━━━┛ RANKS ┗━━━┓
      
   *Name :* ${nomAuteurMessage}
 
@@ -251,7 +251,7 @@ adams( {
     const {ms , mybotpic} = commandeOptions ;
 
 
-       let msg = `┏━━┛ beltah-top-rang ┗━━┓\n\n`
+       let msg = `┏━━┛ carltech top ranking ┗━━┓\n\n`
        
       let topRanks = await getBottom10Users() ;
         let mention = [] ;
