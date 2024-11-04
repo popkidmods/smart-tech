@@ -48,6 +48,7 @@ let infoMsg =  `
 ╏✰▏ *Time* : ${temps} 
 ╏✰▏ *Ram* : ${format(os.totalmem() - os.freemem())}/${format(os.totalmem())}
 ╏✰▏ *Series* : *SPARK-X*
+╏✰▏ *Runtime* : _${runtime(process.uptime())}_*`)
 ╰───────────────────❒ \n\n`;
  
     let menuMsg=`  
