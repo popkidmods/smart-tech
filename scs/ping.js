@@ -52,7 +52,7 @@ adams({ nomCom: 'uptime',
   async (dest, zk, commandeOptions) => {
     const { ms, arg, repondre } = commandeOptions;
 
-                 await repondre(`*speed: ${runtime(process.uptime())}_*`) 
+                 await repondre(`*Cyberion have been running for: _${runtime(process.uptime())}_*`) 
 
    
 
