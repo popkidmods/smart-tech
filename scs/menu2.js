@@ -124,7 +124,7 @@ adams({ nomCom: "menu1", categorie: "General" }, async (dest, zk, commandeOption
             contextInfo: {
                 externalAdReply: {
                     body: "CYBERION-SPARK-X",
-                    thumbnailUrl: "https://files.catbox.moe/va22vq.jpeg",
+                    thumbnailUrl: "https://files.catbox.moe/zxnsck.mp3",
                     sourceUrl: 'https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h',
                     rendersmallThumbnail: false
                 }
