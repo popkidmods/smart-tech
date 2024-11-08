@@ -11,7 +11,7 @@ adams({nomCom:"bot",reaction:"📡",categorie:"IA"},async(dest,zk,commandeOption
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("yes I'm listening to you.")}
+    {return repondre("🕵Yes buddy,please say something.")}
     //var quest = arg.join(' ');
   try{
     
@@ -83,7 +83,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
   
       // Regrouper les arguments en une seule chaîne séparée par "-"
       const question = arg.join(' ');
-      const response = await axios.get(`https://api.giftedtech.us.kg/api/ai/gpt4?q=${question}&apikey=gifted`);
+      const response = await axios.get(`https://apis.ibrahimadams.us.kg/api/ai/gpt4?q=${question}&apikey=gifted`);
       
       const data = response.data;
       if (data) {
