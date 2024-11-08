@@ -64,8 +64,8 @@ adams({
       }, {
         'name': "cta_url",
         'buttonParamsJson': JSON.stringify({
-          'display_text': "🎯 OUR WEBSITE",
-          'url': "https://carltech-innovativehub.vercel.app/"
+          'display_text': "🎯 OUR SESSION WEBSITE",
+          'url': "https://spark-x-session.onrender.com"
         })
       }, {
         'name': "cta_url",
