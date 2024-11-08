@@ -113,7 +113,7 @@ adams({ nomCom: "menu1", categorie: "General" }, async (dest, zk, commandeOption
             }
         });
 
-       // Send audio with caption
+     /*  // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
                 url: "" // Replace with your audio URL
@@ -129,7 +129,7 @@ adams({ nomCom: "menu1", categorie: "General" }, async (dest, zk, commandeOption
                     rendersmallThumbnail: false
                 }
             }
-        });
+        });*/
 
     } catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
