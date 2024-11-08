@@ -105,7 +105,7 @@ adams({ nomCom: "menu1", categorie: "General" }, async (dest, zk, commandeOption
                 mentionedJid: [nomAuteurMessage],
                 externalAdReply: {
                     body: "©CarlTech",
-                    thumbnailUrl: "https://i.imgur.com/1lajgf4.mp4",
+                    thumbnailUrl: "https://files.catbox.moe/zxnsck.mp3",
                     sourceUrl: 'https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h',
                     mediaType: 1,
                     rendersmallThumbnail: true
@@ -113,7 +113,7 @@ adams({ nomCom: "menu1", categorie: "General" }, async (dest, zk, commandeOption
             }
         });
 
-   /*     // Send audio with caption
+       // Send audio with caption
         await zk.sendMessage(dest, { 
             audio: { 
                 url: "" // Replace with your audio URL
@@ -129,7 +129,7 @@ adams({ nomCom: "menu1", categorie: "General" }, async (dest, zk, commandeOption
                     rendersmallThumbnail: false
                 }
             }
-        });*/
+        });
 
     } catch (e) {
         console.log("🥵🥵 Menu erreur " + e);
