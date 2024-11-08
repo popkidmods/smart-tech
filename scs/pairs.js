@@ -11,7 +11,7 @@ const { generateWAMessageFromContent, proto } = pkg;
 
 
 
-adams({ nomCom: "gpt3", reaction: "🪅", categorie: "abu" }, async (dest, zk, commandeOptions) => {
+adams({ nomCom: "gpt3", reaction: "🫠", categorie: "abu" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
@@ -63,7 +63,7 @@ adams({ nomCom: "gpt3", reaction: "🪅", categorie: "abu" }, async (dest, zk, c
                   text: answer
                 }),
                 footer: proto.Message.InteractiveMessage.Footer.create({
-                  text: "> *BMM MD*"
+                  text: "> *CYBERION-SPARK-X*"
                 }),
                 header: proto.Message.InteractiveMessage.Header.create({
                   title: "",
