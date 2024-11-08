@@ -578,7 +578,7 @@ king({ nomCom: "gpt", reaction: "📡", categorie: "AI" }, async (dest, zk, comm
 });
 
 */
-adams({ nomCom: "gemini", reaction: "🤗", categorie: "abu" }, async (dest, zk, commandeOptions) => {
+adams({ nomCom: "gemini", reaction: "🤗", categorie: "carl" }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
   try {
@@ -744,7 +744,7 @@ adams({
   nomCom: "randomwallpaper",
   aliases: ["bestwal", "best", "bw"], // Adding aliases
   reaction: "🙌",
-  categorie: "abu"
+  categorie: "carl"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, arg, ms } = commandeOptions;
 
@@ -763,7 +763,7 @@ adams({
 
 
 
-adams({ nomCom: "random", reaction: "🥂", categorie: "abu" }, async (dest, zk, commandeOptions) => {
+adams({ nomCom: "random", reaction: "🥂", categorie: "carl" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   const response = await fetch('https://api.unsplash.com/photos/random?client_id=72utkjatCBC-PDcx7-Kcvgod7-QOFAm2fXwEeW8b8cc');
 const data = await response.json();
@@ -782,7 +782,7 @@ const data = await response.json();
 }
    );
 
-adams({ nomCom: "nature", reaction: "🦗", categorie: "BMW PICS" }, async (dest, zk, commandeOptions) => {
+adams({ nomCom: "nature", reaction: "🦗", categorie: "Cyberion" }, async (dest, zk, commandeOptions) => {
     const { repondre, arg, ms } = commandeOptions;
   const response = await fetch('https://api.unsplash.com/photos/random?client_id=72utkjatCBC-PDcx7-Kcvgod7-QOFAm2fXwEeW8b8cc');
 const data = await response.json();
@@ -791,7 +791,7 @@ const data = await response.json();
 
                 let buttonMessaged = {
                     image: { url: url },
-                    caption: `*POWERED BY BMW-MD*`,
+                    caption: `*POWERED BY Carltech*`,
                     
                    
                 };
@@ -1320,7 +1320,7 @@ adams({ nomCom: "gpt4", reaction: "📡", categorie: "AI" }, async (dest, zk, co
           name: "cta_url",
           buttonParamsJson: JSON.stringify({
             display_text: "FOLLOW CHANNEL",
-            url: `https://whatsapp.com/channel/0029VaZuGSxEawdxZK9CzM0Y`
+            url: `https://whatsapp.com/channel/0029Vak0genJ93wQXq3q6X3h`
           })
         }
       ];
@@ -1350,7 +1350,7 @@ adams({ nomCom: "gpt4", reaction: "📡", categorie: "AI" }, async (dest, zk, co
                 text: answer
               }),
               footer: proto.Message.InteractiveMessage.Footer.create({
-                text: "> *POWERED BY FLASH-MD*"
+                text: "> *POWERED BY Devibraah*"
               }),
               header: proto.Message.InteractiveMessage.Header.create({
                 title: "",
