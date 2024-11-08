@@ -27,7 +27,7 @@ adams({nomCom : "instagram" , categorie : "Download"},async (dest , zk , command
 
 
 adams({
-  nomCom: "facabook",
+  nomCom: "facebook",
   categorie: "Download",
   reaction: "📽️"
 },
