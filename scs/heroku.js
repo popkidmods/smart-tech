@@ -53,7 +53,7 @@ adams({
     'nom': "CHAT_BOT",
     'choix': ['on', "off"]
   }];
-  let _0x54dce5 = "*BMW MD VARS* \n\n";
+  let _0x54dce5 = "*CYBERION VARS* \n\n";
   for (v = 0; v < _0x3e4f2b.length; v++) {
     _0x54dce5 += v + 1 + "- *" + _0x3e4f2b[v].nom + "*\n";
   }
@@ -75,7 +75,7 @@ adams({
     nom: _0x445a3c,
     choix: _0x14fe3a
   } = _0x3e4f2b[_0x2057c1];
-  let _0x1995c4 = "*BMW MD VARS*\n\n";
+  let _0x1995c4 = "*CYBERION VARS*\n\n";
   _0x1995c4 += "*Variable Name* :" + _0x445a3c + "\n";
   _0x1995c4 += "*Description* :" + getDescriptionFromEnv(_0x445a3c) + "\n\n";
   _0x1995c4 += "Select one\n\n";
