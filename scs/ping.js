@@ -33,7 +33,7 @@ async (dest, zk, commandeOptions) => {
 
 
 
-await repondre(`*Pong▱▱▱▰▰▰▰▰ ${flashspeed} MS* `);
+await repondre(`*🕵Pong▱▱▱▰▰▰▰▰ ${flashspeed} MS* `);
 
 }
 );
