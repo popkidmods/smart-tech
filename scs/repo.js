@@ -45,7 +45,7 @@ adams({
       'lastUpdate': _0x54f98d.updated_at,
       'owner': _0x54f98d.owner.login
     };
-    const _0x305ae3 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎𝐌𝐄𝐓𝐈𝐎𝐍.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n🔄 Repository Name: *CYBERION*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n🕵 Owner: *CARLTECH*\n⭐ Stars: " + _0x33ab65.stars + "\n🍽 Forks: " + _0x33ab65.forks + "\n🔄 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
+    const _0x305ae3 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n🔄 Repository Name: *CYBERION*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n🕵 Owner: *CARLTECH*\n⭐ Stars: " + _0x33ab65.stars + "\n🍽 Forks: " + _0x33ab65.forks + "\n🔄 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
     await _0xc5957d.sendMessage(_0x2ad97e, {
       'image': {
         'url': "https://i.imgur.com/0nWnGBx.jpeg"
@@ -106,7 +106,31 @@ adams({
     console.log("Could not fetch data");
   }
 });*/
-
+adams({
+  'nomCom': "code",
+  'reaction': '🗂',
+  'nomFichier': __filename
+}, async (_0x2ad97e, _0xc5957d, _0x2a01f1) => {
+  const _0x23b84a = await fetch("https://api.github.com/repos/devibraah/BWM-XMD");
+  const _0x54f98d = await _0x23b84a.json();
+  if (_0x54f98d) {
+    const _0x33ab65 = {
+      'stars': _0x54f98d.stargazers_count,
+      'forks': _0x54f98d.forks_count,
+      'lastUpdate': _0x54f98d.updated_at,
+      'owner': _0x54f98d.owner.login
+    };
+    const _0x305ae3 = "𝐆𝐈𝐓𝐇𝐔𝐁 𝐈𝐍𝐅𝐎.  \n𝐂𝐑𝐄𝐓𝐄𝐃 𝐁𝐘 🕵.\n\n𝐒𝐓𝐀𝐑⭐ 𝐓𝐇𝐄 𝐑𝐄𝐏𝐎 𝐓𝐇𝐄𝐍 𝐅𝐎𝐑𝐊🍴\n\n🔄 Repository Name: *CYBERION*\n📝 Last Update: " + _0x33ab65.lastUpdate + "\n🕵 Owner: *CARLTECH*\n⭐ Stars: " + _0x33ab65.stars + "\n🍽 Forks: " + _0x33ab65.forks + "\n🔄 Repo: " + _0x54f98d.html_url + "\n⭕ For More Info : https://t.me/carlltecch";
+    await _0xc5957d.sendMessage(_0x2ad97e, {
+      'image': {
+        'url': "https://i.imgur.com/0nWnGBx.jpeg"
+      },
+      'caption': _0x305ae3
+    });
+  } else {
+    console.log("Could not fetch data");
+  }
+});
 
 
 
