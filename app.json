@@ -35,7 +35,7 @@
       "value":"no",
       "required":false
     },
-    "AUTOREAD_MESSAGES":
+    "AUTO_READ":
     {
       "description":"Your contact  will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"no",
@@ -87,7 +87,7 @@
 	  ,
     "SESSION_ID":
     {
-      "description":"put your session ID , the code you receive after scanning Qr code",   
+      "description":"put your session ID , the code you receive after scanning Qr code,make sure it begins with CYBERION",   
       "value":"",
       "required":true
       
