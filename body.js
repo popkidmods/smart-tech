@@ -1,6 +1,5 @@
 
 
-
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -243,28 +242,68 @@ function mybotpic() {
      return lienAleatoire;
   }
             var commandeOptions = {
-                superUser, dev,
-                verifGroupe,
-                mbre,
-                membreGroupe,
-                verifAdmin,
-                infosGroupe,
-                nomGroupe,
-                auteurMessage,
-                nomAuteurMessage,
-                idBot,
-                verifZokouAdmin,
-                prefixe,
-                arg,
-                repondre,
-                mtype,
-                groupeAdmin,
-                msgRepondu,
-                auteurMsgRepondu,
-                ms,
-                mybotpic
-            
-            };
+    superUser, dev,
+    verifGroupe,
+    mbre,
+    membreGroupe,
+    verifAdmin,
+    infosGroupe,
+    nomGroupe,
+    auteurMessage,
+    nomAuteurMessage,
+    idBot,
+    verifZokouAdmin,
+    prefixe,
+    arg,
+    repondre,
+    mtype,
+    groupeAdmin,
+    msgRepondu,
+    auteurMsgRepondu,
+    ms,
+    mybotpic
+};
+
+// AUTO_LIKE_STATUS: React to status updates with a green heart emoji if enabled.
+  if (conf.AUTO_LIKE_STATUS === "yes") {
+    zk.ev.on("messages.upsert", async (m) => {
+        const { messages } = m;
+        for (const message of messages) {
+            if (message.key && message.key.remoteJid === "status@broadcast") {
+                const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+                if (keith) {
+                    await zk.sendMessage(message.key.remoteJid, {
+                        react: {
+                            key: message.key,
+                            text: "💚",
+                        },
+                    }, {
+                        statusJidList: [message.key.participant, adams],
+                    });
+                }
+            }
+        }
+    });
+}
+
+if (!superUser && origineMessage === auteurMessage && conf.AUTO_REACT === "yes") {
+    const emojis = [
+        '🚗', '🚕', '🚙', '🚌', '🚎', '🏎️', '🚓', '🚑', '🚒', '🚐', '🚚', '🚛', '🚜', // Car and vehicle emojis
+        '❤️', '💛', '💚', '💙', '💜', '🧡', '🖤', '💖', '💗', '💘', '💝', '💞', '💕', '💓', // Love emojis
+        '😁', '😆', '😅', '😂', '🤣', '😊', '😇', '🙂', '🙃', '😉', '😌', '😍', '🥰', '😘', '😗', '😙', // Happy and positive emojis
+        '🍕', '🍔', '🍟', '🌭', '🍿', '🥤', '🍩', '🍪', '🍫', '🍦', '🍰', '🍾', '🍷', '🍺', '🥂', // Food and drink emojis
+        '🌹', '🌷', '🌸', '🌺', '🌻', '🌼', '🌞', '🌝', '🌜', '🌙', '🌟', '🌈', '✨', '💫', // Nature and sparkle emojis
+        '🐱', '🐶', '🐭', '🐹', '🐰', '🐻', '🐼', '🐨', '🐯', '🦁', '🐸', '🐒', '🐔', '🐧', // Animal emojis
+        '⚽', '🏀', '🏈', '⚾', '🎾', '🏐', '🏉', '🎱', '🥇', '🥈', '🥉', '🏆', '🎮', '🎲', // Sports and games emojis
+    ];
+    const emokis = emojis[Math.floor(Math.random() * emojis.length)];
+    zk.sendMessage(origineMessage, {
+        react: {
+            text: emokis,
+            key: ms.key
+        }
+    });
+}
 
                if (ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLowerCase() === 'yes') {
 
