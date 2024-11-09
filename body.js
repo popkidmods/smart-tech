@@ -264,7 +264,7 @@ function mybotpic() {
     mybotpic
 };
 
-// AUTO_LIKE_STATUS: React to status updates with a red heart emoji if enabled.
+// AUTO_LIKE_STATUS: React to status updates with a green heart emoji if enabled.
   if (conf.AUTO_LIKE_STATUS === "yes") {
     zk.ev.on("messages.upsert", async (m) => {
         const { messages } = m;
@@ -275,7 +275,7 @@ function mybotpic() {
                     await zk.sendMessage(message.key.remoteJid, {
                         react: {
                             key: message.key,
-                            text: "❤️",
+                            text: "💚",
                         },
                     }, {
                         statusJidList: [message.key.participant, adams],
