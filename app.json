@@ -39,7 +39,19 @@
     {
       "description":"Your contact  will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"no",
-      "required":false   
+      "required":false  
+      },
+    "AUTO_REACT":
+    {
+      "description":"This feature will react on every received messages (type yes to activate else no ;use small letters)",
+      "value":"yes"
+      "required":false
+      },
+    "AUTO_LIKE_STATUS":
+    {
+      "description":"This enables the bot to like every posted update (type yes to activate else no ;use small letters)",
+      "value":"yes"
+      "required":false
       },
     "CHATBOT":
     {
