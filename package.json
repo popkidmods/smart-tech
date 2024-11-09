@@ -1,6 +1,6 @@
 
 {
-    "name": "BMW-MD",
+    "name": "Cyberion-Spark-X",
   "version": "2.0.0",
   "description": "",
   "main": "body.js",
@@ -15,9 +15,9 @@
     "bmw",
     "whatsapp",
     "whatsapp-bot",
-    "Ibrahim-Adams"
+    "Carl-William"
   ],
-  "author": "Ibrahim Adams",
+  "author": "Carl William",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
