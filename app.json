@@ -1,8 +1,8 @@
 
 
 {
-  "name":"BMW-MD",
-  "description":"Best whatsapp bot developed by Ibrahim adams",
+  "name":"Cyberion-Spark-X",
+  "description":"Best whatsapp bot developed by Carl William",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://telegra.ph/file/0c225f7da5616cdcbec80.jpg",
   "repository":"https://github.com/ekitale/maths-project",
@@ -26,12 +26,6 @@
       "value":"no",
       "required":false
     },
-    "AUTOREAD_MESSAGES":
-    {
-      "description":"Your contact  will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"no",
-      "required":false   
-      },
     "AUTO_REACT":
     {
       "description":"Your contact  will be autoreplying (type yes to active or no to deactive  ; don't write in capital letter)",
@@ -102,14 +96,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "𝐈𝐛𝐫𝐚𝐡𝐢𝐦 𝐀𝐝𝐚𝐦𝐬"
+    "value": "𝐂𝐚𝐫𝐥 𝐖𝐢𝐥𝐥𝐢𝐚𝐦"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254739937062,254710772666"
+    "value": "254740271632,254770954948"
   },
     "WARN_COUNT":
   {
