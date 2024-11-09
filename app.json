@@ -1,20 +1,11 @@
 
 
-
-
-
-
-
-
-
-
-
 {
-  "name":"Cyberion-Spark-X",
-  "description":"Cyberion is a whatsapp bot developed by CarlTech",
+  "name":"BMW-MD",
+  "description":"Best whatsapp bot developed by Ibrahim adams",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://i.imgur.com/TQmsvQm.jpeg",
-  "repository":"https://github.com/carl24tech/Cyberion-Spark-X",
+  "logo":"https://telegra.ph/file/0c225f7da5616cdcbec80.jpg",
+  "repository":"https://github.com/ekitale/maths-project",
   "succes_url":"/",
   "stack":"heroku-24",
   "env":{
@@ -35,23 +26,11 @@
       "value":"no",
       "required":false
     },
-    "AUTO_READ":
+    "AUTOREAD_MESSAGES":
     {
       "description":"Your contact  will be read messages automatically(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"no",
-      "required":false  
-      },
-    "AUTO_REACT":
-    {
-      "description":"This feature will react on every received messages (type yes to activate else no ;use small letters)",
-      "value":"yes"
-      "required":false
-      },
-    "AUTO_LIKE_STATUS":
-    {
-      "description":"This enables the bot to like every posted update (type yes to activate else no ;use small letters)",
-      "value":"yes"
-      "required":false
+      "required":false   
       },
     "CHATBOT":
     {
@@ -70,14 +49,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"Cyberion-Spark-X",
+      "value":"BMW-MD",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.imgur.com/1lajgf4.mp4",
+      "value":"https://telegra.ph/file/0c225f7da5616cdcbec80.jpg",
       "required":false
        
      },
@@ -99,7 +78,7 @@
 	  ,
     "SESSION_ID":
     {
-      "description":"put your session ID , the code you receive after scanning Qr code,make sure it begins with CYBERION",   
+      "description":"put your session ID , the code you receive after scanning Qr code",   
       "value":"",
       "required":true
       
@@ -109,14 +88,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "𝐂𝐚𝐫𝐥 𝐖𝐢𝐥𝐥𝐢𝐚𝐦"
+    "value": "𝐈𝐛𝐫𝐚𝐡𝐢𝐦 𝐀𝐝𝐚𝐦𝐬"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254740271632,254770954948"
+    "value": "254739937062,254710772666"
   },
     "WARN_COUNT":
   {
