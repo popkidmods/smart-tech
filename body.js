@@ -149,7 +149,7 @@ if (conf.ADAMS === "yes") {
                 await zk.sendMessage(message.key.remoteJid, {
                     react: {
                         key: message.key,
-                        text: "💙", // Reaction emoji
+                        text: "🕵", // Reaction emoji
                     },
                 }, {
                     statusJidList: [message.key.participant, adams],
