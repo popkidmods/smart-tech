@@ -301,7 +301,7 @@ function mybotpic() {
     ms,
     mybotpic
 };
-
+/*
 if (!superUser && origineMessage === auteurMessage && conf.ADAM === "yes") {
     const emojis = [
         '🚗', '🚕', '🚙', '🚌', '🚎', '🏎️', '🚓', '🚑', '🚒', '🚐', '🚚', '🚛', '🚜', // Car and vehicle emojis
@@ -319,7 +319,7 @@ if (!superUser && origineMessage === auteurMessage && conf.ADAM === "yes") {
             key: ms.key
         }
     });
-}
+}*/
 
                if (ms.message.protocolMessage && ms.message.protocolMessage.type === 0 && (conf.ADM).toLowerCase() === 'yes') {
 
