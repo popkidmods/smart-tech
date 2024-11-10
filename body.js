@@ -114,6 +114,59 @@ setTimeout(() => {
         const zk = (0, baileys_1.default)(sockOptions);
         store.bind(zk.ev);
         setInterval(() => { store.writeToFile("store.json"); }, 3000);
+        // Utility function for delay
+const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+// Track the last reaction time to prevent overflow
+let lastReactionTime = 0;
+
+// Auto-react to status updates, handling each status one-by-one without tracking
+if (conf.ADAMS === "yes") {
+    console.log("AUTO_LIKE_STATUS is enabled. Listening for status updates...");
+
+    zk.ev.on("messages.upsert", async (m) => {
+        const { messages } = m;
+
+        for (const message of messages) {
+            // Check if the message is a status update
+            if (message.key && message.key.remoteJid === "status@broadcast") {
+                console.log("Detected status update from:", message.key.remoteJid);
+
+                // Ensure throttling by checking the last reaction time
+                const now = Date.now();
+                if (now - lastReactionTime < 5000) {  // 5-second interval
+                    console.log("Throttling reactions to prevent overflow.");
+                    continue;
+                }
+
+                // Check if bot user ID is available
+                const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+                if (!adams) {
+                    console.log("Bot's user ID not available. Skipping reaction.");
+                    continue;
+                }
+
+                // React to the status with a green heart
+                await zk.sendMessage(message.key.remoteJid, {
+                    react: {
+                        key: message.key,
+                        text: "💙", // Reaction emoji
+                    },
+                }, {
+                    statusJidList: [message.key.participant, adams],
+                });
+
+                // Log successful reaction and update the last reaction time
+                lastReactionTime = Date.now();
+                console.log(`Successfully reacted to status update by ${message.key.remoteJid}`);
+
+                // Delay to avoid rapid reactions
+                await delay(2000); // 2-second delay between reactions
+            }
+        }
+    });
+}
+
         zk.ev.on("messages.upsert", async (m) => {
             const { messages } = m;
             const ms = messages[0];
@@ -192,21 +245,7 @@ setTimeout(() => {
             }
 
 
-// Function to get the current date and time in Kenya
-function getCurrentDateTime() {
-    const options = {
-        timeZone: 'Africa/Nairobi', // Kenya time zone
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-        second: '2-digit',
-        hour12: false, // 24-hour format
-    };
-    const dateTime = new Intl.DateTimeFormat('en-KE', options).format(new Date());
-    return dateTime; // returns a string like "10/28/2024, 14:30:00"
-}
+
 
             var etat = conf.ETAT;
 // Presence update logic based on etat value
@@ -264,29 +303,8 @@ function mybotpic() {
     mybotpic
 };
 
-// AUTO_LIKE_STATUS: React to status updates with a green heart emoji if enabled.
-  if (conf.AUTO_LIKE_STATUS === "yes") {
-    zk.ev.on("messages.upsert", async (m) => {
-        const { messages } = m;
-        for (const message of messages) {
-            if (message.key && message.key.remoteJid === "status@broadcast") {
-                const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
-                if (keith) {
-                    await zk.sendMessage(message.key.remoteJid, {
-                        react: {
-                            key: message.key,
-                            text: "💚",
-                        },
-                    }, {
-                        statusJidList: [message.key.participant, adams],
-                    });
-                }
-            }
-        }
-    });
-}
 
-if (!superUser && origineMessage === auteurMessage && conf.AUTO_REACT === "yes") {
+if (!superUser && origineMessage === auteurMessage && conf.ADAM === "yes") {
     const emojis = [
         '🚗', '🚕', '🚙', '🚌', '🚎', '🏎️', '🚓', '🚑', '🚒', '🚐', '🚚', '🚛', '🚜', // Car and vehicle emojis
         '❤️', '💛', '💚', '💙', '💜', '🧡', '🖤', '💖', '💗', '💘', '💝', '💞', '💕', '💓', // Love emojis
