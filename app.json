@@ -2,7 +2,7 @@
 
 {
   "name":"Cyberion-Spark-X",
-  "description":"Best whatsapp bot developed by Carl William",
+  "description":"Whatsapp bot developed by Carl William",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.imgur.com/KmAIGVP.jpeg",
   "repository":"https://github.com/ekitale/maths-project",
@@ -22,34 +22,34 @@
       "required":false
     }, "AUTO_DOWNLOAD_STATUS":
     {
-      "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
+      "description":"Your contact status will be downloaded automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
     },
     "AUTO_REACT":
     {
-      "description":"Your contact  will be autoreplying (type yes to active or no to deactive  ; don't write in capital letter)",
+      "description":"Received messages will be automalically reacted on(type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"no",
       "required":false
     }
     ,
 "AUTO_LIKE_STATUS":
     {
-      "description":"Your contact  will be autoreplying (type yes to active or no to deactive  ; don't write in capital letter)",
-      "value":"no",
+      "description":"The bot will like all posted updates automatically (type yes to active or no to deactive  ; don't write in capital letter)",
+      "value":"yes",
       "required":false
     }
     ,
 "AUTO_READ":
     {
-      "description":"Your contact  will be autoreplying (type yes to active or no to deactive  ; don't write in capital letter)",
+      "description":"Your contact messages will be read automatically (type yes to active or no to deactive  ; don't write in capital letter)",
       "value":"no",
       "required":false
     }
     ,
      "PM_PERMIT" :
      {
-      "description":"Other user can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
+      "description":"Other users can't use your bot in pm (type yes to active or no to deactive ; don't write in capital letter)",
       "value":"no",
       "required":false
     }
@@ -86,7 +86,7 @@
 	  ,
     "SESSION_ID":
     {
-      "description":"put your session ID , the code you receive after scanning Qr code",   
+      "description":"put your session ID , the code you receive after linking the device...(Make sure it begins with CYBERION)",   
       "value":"",
       "required":true
       
