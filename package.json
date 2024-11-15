@@ -1,6 +1,6 @@
 
 {
-    "name": "Cyberion-Spark-X",
+    "name": "POPKID",
   "version": "2.0.0",
   "description": "",
   "main": "body.js",
@@ -17,7 +17,7 @@
     "whatsapp-bot",
     "Carl-William"
   ],
-  "author": "Carl William",
+  "author": "POPKID",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
