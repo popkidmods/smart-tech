@@ -1,10 +1,10 @@
 
 
 {
-  "name":"Cyberion-Spark-X",
-  "description":"Whatsapp bot developed by Carl William",
+  "name":"POPKID",
+  "description":"Whatsapp bot developed by Popkid",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://i.imgur.com/KmAIGVP.jpeg",
+  "logo":"https://i.ibb.co/4WRVGgC/IMG-20241115-WA0009.jpg",
   "repository":"https://github.com/ekitale/maths-project",
   "succes_url":"/",
   "stack":"heroku-24",
@@ -57,14 +57,14 @@
     "BOT_NAME" : {
        
       "description":"put A name for your bot",
-      "value":"CYBERION-SPARK-X",
+      "value":"POPKID MD",
       "required":false
 
     } ,
      "BOT_MENU_LINKS" : {
     
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-      "value":"https://i.imgur.com/ntJX1Pf.jpeg",
+      "value":"https://i.ibb.co/4WRVGgC/IMG-20241115-WA0009.jpg",
       "required":false
        
      },
@@ -86,7 +86,7 @@
 	  ,
     "SESSION_ID":
     {
-      "description":"put your session ID , the code you receive after linking the device...(Make sure it begins with CYBERION)",   
+      "description":"put your session ID , the code you receive after linking the device...(Make sure it begins with POPKID)",   
       "value":"",
       "required":true
       
@@ -96,14 +96,14 @@
     
     "desc": "Your Name",
     "required": false,
-    "value": "𝐂𝐚𝐫𝐥 𝐖𝐢𝐥𝐥𝐢𝐚𝐦"
+    "value": "𝐩𝐨𝐩𝐤𝐢𝐝"
   },
     "NUMERO_OWNER":
   {
     
     "desc": "Your number , dont put '+' and put you area code(exemple of togo '228')",
     "required":false,
-    "value": "254740271632,254770954948"
+    "value": "254111385747,254732297194"
   },
     "WARN_COUNT":
   {
